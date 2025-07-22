@@ -43,6 +43,14 @@ def notificar_humano(numero):
     # Simula notificación por email, Telegram o Firebase
     print(f"¡Atención! El número {numero} pidió hablar con un humano.")
     # Aquí podrías enviar un correo, mensaje a Telegram, o guardar en base de datos.
+def notificar_humano(numero):
+    print(f"¡Atención! El número {numero} pidió hablar con un humano.")
+
+@app.route("/")
+def home():
+    return "¡El bot de autos está en línea!"
 
 if __name__ == "__main__":
     app.run()
+
+
